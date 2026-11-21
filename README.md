@@ -15,7 +15,7 @@ Explore my work, projects, and professional qualifications below.
 
 | Category | Description | Link |
 |---|---|---|
-| QA Testing Portfolio | Manual Testing and Automation Testing projects, including test cases, test execution, bug reports, and Playwright automation. | [View Portfolio](https://drive.google.com/drive/folders/1Cf3320up0XIGq2HYrgvgkH2_bcbb8ElY?usp=sharing) |
+| QA Testing Portfolio | Manual Testing and Automation Testing projects, including test cases, test execution, bug reports, and Playwright automation. | [View Portfolio](https://drive.google.com/drive/folders/1SRDHn5Z9FAnQPUR7CV_BaDtLBL2RM_Uz?usp=sharing) |
 | System Analysis | System analysis documentation, requirements analysis, UML diagrams, and system design projects. | [View Portfolio](https://drive.google.com/drive/folders/1_ZmQXzFA7vKDXDEqsWPvXNWQxGRzLiwI?usp=drive_link) |
 | Projects | Academic and personal projects related to Information Systems and software development. | [View Projects](https://charming-biscuit-79f506.netlify.app/) |
 | Certifications | Certificates from courses, training programs, and professional learning activities. | [View Certificates](https://drive.google.com/drive/folders/1T_sZqpT8Yiasn2GTz_ombC1_wgFPQgRx?usp=sharing) |
