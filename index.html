@@ -1,0 +1,887 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Elena Serenida Hutasoit, aspiring Software Quality Assurance.">
+
+    <title>Elena Serenida Hutasoit | Portfolio</title>
+
+    <style>
+        :root {
+            --forest: #173d32;
+            --green: #3d8063;
+            --sage: #e3ece5;
+            --cream: #f7f6f1;
+            --white: #fffefa;
+            --ink: #202b26;
+            --muted: #68766e;
+            --gold: #c49a55;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--white);
+            color: var(--ink);
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 88%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        /* NAVIGATION */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255, 254, 250, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #e5e9e5;
+        }
+
+        nav {
+            min-height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--forest);
+            letter-spacing: -1px;
+        }
+
+        .logo span {
+            color: var(--gold);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+        }
+
+        .nav-links a {
+            color: var(--muted);
+            font-size: 14px;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--green);
+        }
+
+        /* HERO */
+
+        .hero {
+            background: linear-gradient(
+                135deg,
+                #f1f4ef,
+                #fbfaf6,
+                #e4eee6
+            );
+            padding: 90px 0;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            align-items: center;
+            gap: 65px;
+        }
+
+        .eyebrow {
+            color: var(--green);
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            color: var(--forest);
+            font-size: clamp(42px, 6vw, 75px);
+            line-height: 1.08;
+            letter-spacing: -3px;
+            margin: 20px 0;
+        }
+
+        .hero h1 span {
+            color: var(--gold);
+        }
+
+        .hero-role {
+            font-size: 21px;
+            font-weight: bold;
+            color: var(--forest);
+        }
+
+        .hero-description {
+            color: var(--muted);
+            font-size: 16px;
+            max-width: 550px;
+            margin: 22px 0 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 24px;
+            border-radius: 30px;
+            background: var(--forest);
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            transition: .3s;
+        }
+
+        .btn:hover {
+            background: var(--green);
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--forest);
+            border: 1px solid #aabeb0;
+        }
+
+        .btn-outline:hover {
+            color: white;
+        }
+
+        .photo-wrapper {
+            position: relative;
+            max-width: 420px;
+            margin-left: auto;
+        }
+
+        .photo-wrapper::before {
+            content: "";
+            position: absolute;
+            inset: 20px -18px -18px 20px;
+            border: 1px solid #9eb7a6;
+            border-radius: 220px 220px 25px 25px;
+        }
+
+        .profile-photo {
+            position: relative;
+            display: block;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            object-position: center 30%;
+            border-radius: 220px 220px 25px 25px;
+            box-shadow: 0 20px 50px rgba(23, 61, 50, .12);
+        }
+
+        .photo-label {
+            position: absolute;
+            bottom: 25px;
+            left: -30px;
+            background: white;
+            color: var(--forest);
+            padding: 13px 19px;
+            border-radius: 12px;
+            font-size: 13px;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(0,0,0,.08);
+        }
+
+        /* GENERAL SECTION */
+
+        section {
+            padding: 85px 0;
+        }
+
+        .section-title {
+            margin-bottom: 38px;
+        }
+
+        .section-title h2 {
+            color: var(--forest);
+            font-size: clamp(30px, 4vw, 46px);
+            line-height: 1.2;
+            letter-spacing: -1.5px;
+            margin: 12px 0;
+        }
+
+        .section-title p {
+            color: var(--muted);
+            max-width: 650px;
+        }
+
+        /* ABOUT */
+
+        .about-content {
+            display: grid;
+            grid-template-columns: .7fr 1.3fr;
+            gap: 55px;
+            align-items: start;
+        }
+
+        .about-box {
+            background: var(--forest);
+            color: white;
+            padding: 35px;
+            min-height: 230px;
+            border-radius: 22px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .about-box h3 {
+            font-size: 40px;
+            line-height: 1.1;
+        }
+
+        .about-box p {
+            color: #d4e3d9;
+        }
+
+        .about-text {
+            color: var(--muted);
+            font-size: 16px;
+        }
+
+        .about-text strong {
+            color: var(--forest);
+        }
+
+        .interests {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 24px;
+        }
+
+        .interest {
+            background: var(--sage);
+            color: var(--forest);
+            padding: 9px 15px;
+            border-radius: 25px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        /* PORTFOLIO */
+
+        .portfolio-section {
+            background: var(--cream);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .portfolio-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid #e1e7e1;
+            min-height: 225px;
+            display: flex;
+            flex-direction: column;
+            transition: .3s;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(23, 61, 50, .09);
+        }
+
+        .card-number {
+            color: var(--gold);
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .portfolio-card h3 {
+            color: var(--forest);
+            font-size: 21px;
+            margin: 20px 0 10px;
+        }
+
+        .portfolio-card p {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 22px;
+        }
+
+        .portfolio-card a {
+            color: var(--green);
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: auto;
+        }
+
+        .portfolio-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* KNOWLEDGE */
+
+        .knowledge-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .knowledge-card {
+            background: var(--cream);
+            padding: 28px;
+            border: 1px solid #e1e7e1;
+            border-radius: 18px;
+        }
+
+        .knowledge-card h3 {
+            color: var(--forest);
+            margin-bottom: 12px;
+        }
+
+        .knowledge-card p {
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        .learning-note {
+            background: #fbf7ed;
+            border-left: 4px solid var(--gold);
+            padding: 18px 22px;
+            margin-top: 22px;
+            border-radius: 0 12px 12px 0;
+            color: #6c624f;
+            font-size: 14px;
+        }
+
+        /* TOOLS */
+
+        .tools-section {
+            background: var(--cream);
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 14px;
+        }
+
+        .tool {
+            background: white;
+            border: 1px solid #e1e7e1;
+            border-radius: 14px;
+            padding: 20px 10px;
+            text-align: center;
+            color: var(--forest);
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* CONTACT */
+
+        .contact-section {
+            background: var(--forest);
+            color: white;
+        }
+
+        .contact-section .eyebrow {
+            color: #d5b477;
+        }
+
+        .contact-section h2 {
+            font-size: clamp(35px, 5vw, 55px);
+            line-height: 1.1;
+            margin: 15px 0;
+        }
+
+        .contact-section p {
+            color: #d1dfd6;
+            max-width: 600px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 13px;
+            margin-top: 30px;
+        }
+
+        .contact-links a {
+            color: white;
+            border: 1px solid rgba(255,255,255,.4);
+            border-radius: 30px;
+            padding: 11px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: .3s;
+        }
+
+        .contact-links a:hover {
+            background: rgba(255,255,255,.15);
+        }
+
+        .contact-email {
+            color: white;
+            padding: 11px 17px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #102e25;
+            color: #b9c9bf;
+            padding: 23px 0;
+            font-size: 13px;
+        }
+
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 800px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 55px;
+            }
+
+            .photo-wrapper {
+                margin: auto;
+                width: 80%;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .portfolio-grid,
+            .knowledge-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tools-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            section {
+                padding: 65px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 90%;
+            }
+
+            .hero {
+                padding: 60px 0;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .photo-wrapper {
+                width: 85%;
+            }
+
+            .photo-label {
+                left: -12px;
+            }
+
+            footer .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="container">
+            <a href="#home" class="logo">
+                ELENA HUTASOIT<span>.</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#knowledge">Knowledge</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <div class="container hero-content">
+
+                <div>
+                    <div class="eyebrow">Personal Portfolio</div>
+
+                    <h1>
+                        Elena Serenida<br>
+                        Hutasoit<span>.</span>
+                    </h1>
+
+                    <div class="hero-role">
+                        Aspiring Software Quality Assurance
+                        <br>
+                        Information Systems
+                    </div>
+
+                    <p class="hero-description">
+                        Interested in understanding how systems work,
+                        identifying issues, and helping create reliable,
+                        user-focused digital experiences.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn">
+                            Explore Portfolio ↗
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Get in Touch
+                        </a>
+                    </div>
+                </div>
+
+                <div class="photo-wrapper">
+                    <img
+                        src="profile.jpg"
+                        alt="Elena Serenida Hutasoit"
+                        class="profile-photo"
+                    >
+
+                    <div class="photo-label">
+                        Curious mind. Continuous learner.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="container">
+
+                <div class="section-title">
+                    <div class="eyebrow">01 / About Me</div>
+                    <h2>Learning, analyzing,<br>and improving.</h2>
+                </div>
+
+                <div class="about-content">
+
+                    <div class="about-box">
+                        <h3>QA<br>&amp; Analysis</h3>
+                        <p>My professional interests</p>
+                    </div>
+
+                    <div class="about-text">
+                        <p>
+                            I am an Information Systems student with a
+                            strong interest in
+                            <strong>
+                                Software Quality Assurance,
+                                Manual Testing, Automation Testing,
+                                and System Analysis.
+                            </strong>
+
+                            I enjoy analyzing systems, understanding
+                            user requirements, identifying potential
+                            issues, and learning how to ensure software
+                            quality through structured testing and
+                            documentation.
+                        </p>
+
+                        <br>
+
+                        <p>
+                            I continue developing my knowledge through
+                            coursework, independent learning, project
+                            experience, and AI-assisted coding practice.
+                        </p>
+
+                        <div class="interests">
+                            <span class="interest">Software Quality Assurance</span>
+                            <span class="interest">Manual Testing</span>
+                            <span class="interest">Automation Testing</span>
+                            <span class="interest">Test Case Design</span>
+                            <span class="interest">Bug Reporting</span>
+                            <span class="interest">System Analysis</span>
+                            <span class="interest">Requirements Analysis</span>
+                            <span class="interest">UML Modeling</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section class="portfolio-section" id="portfolio">
+            <div class="container">
+
+                <div class="section-title">
+                    <div class="eyebrow">02 / Selected Work</div>
+                    <h2>A closer look at<br>what I have explored.</h2>
+                    <p>
+                        Explore my testing documentation, system analysis
+                        work, projects, and professional learning.
+                    </p>
+                </div>
+
+                <div class="portfolio-grid">
+
+                    <div class="portfolio-card">
+                        <div class="card-number">01 / QUALITY ASSURANCE</div>
+                        <h3>QA Testing Portfolio</h3>
+                        <p>
+                            Manual and Automation Testing projects,
+                            including test cases, test execution,
+                            bug reports, and Playwright automation.
+                        </p>
+                        <a href="https://drive.google.com/drive/folders/1SRDHn5Z9FAnQPUR7CV_BaDtLBL2RM_Uz?usp=sharing" target="_blank" rel="noopener">
+                            Open QA Portfolio ↗
+                        </a>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="card-number">02 / SYSTEM ANALYSIS</div>
+                        <h3>System Analysis</h3>
+                        <p>
+                            System analysis documentation,
+                            requirements analysis, UML diagrams,
+                            and system design projects.
+                        </p>
+                        <a href="https://drive.google.com/drive/folders/1_ZmQXzFA7vKDXDEqsWPvXNWQxGRzLiwI?usp=drive_link" target="_blank" rel="noopener">
+                            Explore Analysis ↗
+                        </a>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="card-number">03 / PROJECT SHOWCASE</div>
+                        <h3>Web &amp; Academic Projects</h3>
+                        <p>
+                            Academic and personal projects related
+                            to Information Systems and software
+                            development.
+                        </p>
+                        <a href="https://charming-biscuit-79f506.netlify.app/" target="_blank" rel="noopener">
+                            View Project ↗
+                        </a>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="card-number">04 / WEB PROJECT</div>
+                        <h3>Additional Website</h3>
+                        <p>
+                            An additional deployed web project
+                            included in my project showcase.
+                        </p>
+                        <a href="https://dynamic-souffle-062fce.netlify.app/" target="_blank" rel="noopener">
+                            Visit Website ↗
+                        </a>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="card-number">05 / PROFESSIONAL LEARNING</div>
+                        <h3>Certifications</h3>
+                        <p>
+                            Certificates from courses, training
+                            programs, and professional learning
+                            activities.
+                        </p>
+                        <a href="https://drive.google.com/drive/folders/1T_sZqpT8Yiasn2GTz_ombC1_wgFPQgRx?usp=sharing" target="_blank" rel="noopener">
+                            View Certificates ↗
+                        </a>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="card-number">06 / PROFILE</div>
+                        <h3>Curriculum Vitae</h3>
+                        <p>
+                            My educational background, skills,
+                            project experience, and qualifications.
+                        </p>
+                        <a href="https://drive.google.com/drive/folders/13xilbO6674Z5u51QJtyqf-CZnjAfppKo?usp=drive_link" target="_blank" rel="noopener">
+                            View CV ↗
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS AND KNOWLEDGE -->
+        <section id="knowledge">
+            <div class="container">
+
+                <div class="section-title">
+                    <div class="eyebrow">03 / Skills &amp; Knowledge</div>
+                    <h2>Knowledge in progress.</h2>
+                    <p>
+                        An overview of the topics and technologies
+                        I am learning and exploring.
+                    </p>
+                </div>
+
+                <div class="knowledge-grid">
+
+                    <div class="knowledge-card">
+                        <h3>Quality Assurance &amp; Analysis</h3>
+                        <p>
+                            Software Quality Assurance, Manual Testing,
+                            Automation Testing, Test Case Design,
+                            Bug Reporting, System Analysis,
+                            Requirements Analysis, and UML Modeling.
+                        </p>
+                    </div>
+
+                    <div class="knowledge-card">
+                        <h3>Technical Knowledge</h3>
+                        <p>
+                            Basic knowledge and exposure to JavaScript,
+                            Dart, PHP (Laravel), SQL (MariaDB), MySQL,
+                            Supabase, and Playwright through academic
+                            projects and AI-assisted coding practice.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="learning-note">
+                    I am still developing my technical skills.
+                    Some coding tasks are completed with the assistance
+                    of AI tools as part of my learning process.
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TOOLS -->
+        <section class="tools-section">
+            <div class="container">
+
+                <div class="section-title">
+                    <div class="eyebrow">04 / Tools &amp; Workflow</div>
+                    <h2>Tools I have explored.</h2>
+                </div>
+
+                <div class="tools-grid">
+                    <div class="tool">Playwright</div>
+                    <div class="tool">VS Code</div>
+                    <div class="tool">MariaDB / MySQL</div>
+                    <div class="tool">Supabase</div>
+                    <div class="tool">Figma</div>
+                    <div class="tool">Microsoft Office</div>
+                    <div class="tool">Draw.io</div>
+                    <div class="tool">Git</div>
+                    <div class="tool">GitHub</div>
+                    <div class="tool">AI Assistants</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+
+                <div class="eyebrow">05 / Contact</div>
+
+                <h2>
+                    Let's connect<br>
+                    and create impact.
+                </h2>
+
+                <p>
+                    Thank you for taking the time to explore my portfolio.
+                    Feel free to connect with me through the links below.
+                </p>
+
+                <div class="contact-links">
+                    <a href="https://github.com/elenahutasoit03" target="_blank" rel="noopener">
+                        GitHub ↗
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/elena-serenida-hutasoit-bb5a34450/" target="_blank" rel="noopener">
+                        LinkedIn ↗
+                    </a>
+
+                    <span class="contact-email">
+                        elenahutasoit03@gmail.com
+                    </span>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <span>
+                © 2026 Elena Serenida Hutasoit
+            </span>
+
+            <span>
+                Personal Portfolio · Designed with care
+            </span>
+        </div>
+    </footer>
+
+</body>
+</html>
