@@ -1,60 +1,34 @@
 
-# Elena Serenida Hutasoit
+# Personal Finance
 
-**Information Systems Student | Aspiring QA Engineer & System Analyst**
+**Software Quality Assurance | Manual Testing**
 
-I'm an Information Systems student interested in Software Quality Assurance (QA) and System Analysis.
-
-I enjoy understanding business processes, analyzing system requirements, designing system workflows, and testing applications to ensure they meet user needs and functional requirements.
+A personal finance web application developed using Laravel. This project is part of my portfolio to practice software testing and quality assurance.
 
 ---
 
-### Quality Assurance
+### Project Overview
+
+This project focuses on testing the functionality of a Personal Finance application to ensure that its features work as expected.
+
+### Testing Activities
 
 - Manual Testing
 - Functional Testing
-- Test Scenario & Test Case Design
-- Bug Identification & Reporting
-- Test Documentation
-- Software Quality Analysis
+- Test Scenario Design
+- Test Case Design
+- Bug Identification
 
-### System Analysis
+### Test Documentation
 
-- System Requirements Analysis
-- Business Process Analysis
-- Use Case Diagram
-- Activity Diagram
-- Entity Relationship Diagram (ERD)
-- System Documentation
+The test cases and testing documentation can be accessed below.
+
+**[View Manual Testing Documentation](https://docs.google.com/spreadsheets/d/1BZGhGDuvpyQfC5Wdkjh--3OFsMMki02o/edit?usp=sharing)**
 
 ### Tools & Technologies
 
-- **Programming & Development Knowledge:** PHP, Laravel, Dart, Flutter, HTML, CSS, JavaScript
-- **Database:** SQL, PostgreSQL, Supabase
-- **Tools:** GitHub, VS Code, Figma
-
----
-
-### Projects
-
-**Personal Finance**  
-Personal finance management application with QA documentation.
-
-**MomSpace**  
-Website development and system analysis documentation.
-
-**ParaBank Testing**  
-Manual software testing project with planned automation testing.
-
-**MealMate**  
-Mobile application development project.
-
----
-
-### Career Interests
-
-Software Quality Assurance (SQA) · Manual QA Engineer · System Analyst · Software Tester
-
-### Connect With Me
-
-[GitHub](https://github.com/elenahutasoit03)
+- Laravel
+- PHP
+- MySQL
+- Google Sheets
+- GitHub
