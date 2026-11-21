@@ -1,5 +1,5 @@
 
-# Elena Hutasoit
+# Elena Serenida Hutasoit
 
 **Information Systems Student | Aspiring QA Engineer & System Analyst**
 
