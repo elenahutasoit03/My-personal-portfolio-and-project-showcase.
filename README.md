@@ -20,7 +20,7 @@ Explore my work, projects, and professional qualifications below.
 | Projects | Academic and personal projects related to Information Systems and software development. | [View Projects](https://charming-biscuit-79f506.netlify.app/) |
 | Certifications | Certificates from courses, training programs, and professional learning activities. | [View Certificates](https://drive.google.com/drive/folders/1T_sZqpT8Yiasn2GTz_ombC1_wgFPQgRx?usp=sharing) |
 | Curriculum Vitae | My educational background, skills, project experience, and qualifications. | [View CV](https://drive.google.com/drive/folders/13xilbO6674Z5u51QJtyqf-CZnjAfppKo?usp=drive_link) |
-| LinkedIn | Professional profile, education, experience, and career updates | [Visit LinkedIn](ttps://www.linkedin.com/in/elena-serenida-hutasoit-bb5a34450/) |
+| LinkedIn | Professional profile, education, experience, and career updates | [Visit LinkedIn](https://www.linkedin.com/in/elena-serenida-hutasoit-bb5a34450/) |
 
 ---
 
